@@ -72,7 +72,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/MichaelScripter/MiniS
 end)
 
 tohbtns:Button("Tower Of Hell OP Script", function()
-loadstring(game:HttpGet(“https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub”, true))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub', true))()
 end)
 
 dhbtns:Button("Da Hood Script", function()
