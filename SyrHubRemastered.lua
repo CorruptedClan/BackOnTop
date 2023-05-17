@@ -76,7 +76,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/script
 end)
 
 dhbtns:Button("Da Hood Script", function()
-loadstring(game:HttpGet(“https://raw.githubusercontent.com/niqu1337/vertical/main/core/script.lua”))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/niqu1337/vertical/main/core/script.lua'))()
 end)
 
 hsebtns:Button("Hide and Seek Extreme OP GUI", function()
@@ -88,7 +88,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/zakater5/LuaRepo/main
 end)
 
 lsbtns:Button("Lifting Simulator GUI", function()
-loadstring(game:HttpGet(("https://pastebin.com/raw/zQ9zFW0f"  ,true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/zQ9zFW0f"  ,true))()
 end)
 
 ysxbtns:Button("Autofarm GUI", function()
