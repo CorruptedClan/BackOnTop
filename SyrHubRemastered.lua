@@ -88,7 +88,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/zakater5/LuaRepo/main
 end)
 
 lsbtns:Button("Lifting Simulator GUI", function()
-loadstring(game:HttpGet(('https://pastebin.com/raw/zQ9zFW0f'),true))()
+loadstring(game:HttpGet(("https://pastebin.com/raw/zQ9zFW0f"  ,true))()
 end)
 
 ysxbtns:Button("Autofarm GUI", function()
@@ -105,11 +105,11 @@ end)
 
 klbtns:Button("Autofarm, Grab Fruits + more!", function()
 local request = (syn and syn.request) or (http and http.request) or http_request
-loadstring(request({['Url']='https://x7.software',['Method']='GET'}).Body)("X7-a5KsoQGw")
+loadstring(request({["Url"]='https://x7.software',["Method"]='GET'}).Body)("X7-a5KsoQGw")
 end)
 
 evadebtns:Button("Evade Script OP", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua"))()
 end)
 
 doorsbtns:Button("Doors Black GUI", function()
@@ -117,7 +117,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/ma
 end)
 
 ambtns:Button("Adopt Me Autofarm", function()
-loadstring(game:HttpGet(‘https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua’))()
+loadstring(game:HttpGet("https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua"))()
 end)
 
 arsbtns:Button("Arsenal OP GUI", function()
