@@ -32,7 +32,7 @@ local ambtns = mainserv:Channel("Adopt Me")
 local arsbtns = mainserv:Channel("Arsenal")
 
 --channels for tools
-local miscbtns = mainserv:Channel("Misc Scripts")
+local miscbtns = secserv:Channel("Misc Scripts")
 
 --scripts
 bfbtns:Button("Mukuro Hub BF", function()
