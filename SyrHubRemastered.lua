@@ -30,6 +30,7 @@ local evadebtns = mainserv:Channel("Evade")
 local doorsbtns = mainserv:Channel("Doors")
 local ambtns = mainserv:Channel("Adopt Me")
 local arsbtns = mainserv:Channel("Arsenal")
+local ffbtns = mainserv:Channel("Funky Friday")
 
 --channels for tools
 local miscbtns = secserv:Channel("Misc Scripts")
@@ -41,6 +42,22 @@ end)
 
 slbtns:Button("Premier Hub", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/TrustsenseDev/Utilities/main/Premier.lua', true))()
+end)
+
+slbtns:Button("V.G Hub (better than Premier)", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+slbtns:Button("Project Meow", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/L1ZOT/Project-PJM/main/shinido"))()
+end)
+
+slbtns:Button("Black Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xzqecc/Script/main/xzqec_changer"))()
+end)
+
+slbtns:Button("Wumpus Script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dontsteal/donttouch/main/wump"))()
 end)
 
 psxbtns:Button("Milk Up Pet Sim X", function()
@@ -126,6 +143,10 @@ end)
 
 arsbtns:Button("Arsenal OP GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/Init"))()
+end)
+
+ffbtns:Button("Funky Friday Autoplayer (Flxuxs Exclusive)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ShowerHead-FluxTeam/scripts/main/funky-friday-autoplay"))()
 end)
 
 
