@@ -109,7 +109,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/niqu1337/vertical/mai
 end)
 
 dhbtns:Button("Mango Hub", function()
-loadstring(game:HttpGet(“https://raw.githubusercontent.com/rogelioajax/lua/main/MangoHub”))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rogelioajax/lua/main/MangoHub"))()
 end)
 
 hsebtns:Button("Hide and Seek Extreme OP GUI", function()
