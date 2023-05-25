@@ -60,6 +60,10 @@ slbtns:Button("Wumpus Script", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/dontsteal/donttouch/main/wump"))()
 end)
 
+slbtns:Button("Speed Hub X (best)", function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Script%20Game"))()
+end)
+
 psxbtns:Button("Milk Up Pet Sim X", function()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/PetSimX/main/MilkUpBeta.lua"))()
 end)
@@ -100,8 +104,12 @@ tohbtns:Button("Tower Of Hell OP Script", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub', true))()
 end)
 
-dhbtns:Button("Da Hood Script", function()
+dhbtns:Button("Vertical Hub", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/niqu1337/vertical/main/core/script.lua'))()
+end)
+
+dhbtns:Button("Mango Hub", function()
+loadstring(game:HttpGet(“https://raw.githubusercontent.com/rogelioajax/lua/main/MangoHub”))()
 end)
 
 hsebtns:Button("Hide and Seek Extreme OP GUI", function()
@@ -139,6 +147,14 @@ end)
 
 doorsbtns:Button("Doors Black GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Doors"))()
+end)
+
+doorsbtns:Button("Doors Green GUI", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+end)
+
+doorsbtns:Button("Never Lose HUB", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/neverlose.xyz/main/Doors.lua"))()
 end)
 
 ambtns:Button("Adopt Me Autofarm", function()
