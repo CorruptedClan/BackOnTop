@@ -32,6 +32,8 @@ local ambtns = mainserv:Channel("Adopt Me")
 local arsbtns = mainserv:Channel("Arsenal")
 local ffbtns = mainserv:Channel("Funky Friday")
 local katbtns = mainserv:Channel("K.A.T")
+local ktybtns = mainserv:Channel("Kitty")
+local bssbtns = mainserv:Channel("Be Swarm Simulator")
 
 --channels for tools
 local miscbtns = secserv:Channel("Misc Scripts")
@@ -168,6 +170,26 @@ end)
 
 ffbtns:Button("Funky Friday Autoplayer (Flxuxs Exclusive)", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ShowerHead-FluxTeam/scripts/main/funky-friday-autoplay"))()
+end)
+
+katbtns:Button("Kat OP Hub Aim, Autokill etc", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/6rd91GZx", true))()
+end)
+
+katbtns:Button("Kattoware Hub", function()
+loadstring(game:HttpGet('http://cattoware.tk/main.lua'))()
+end)
+
+ktybtns:Button("Kitty Black GUI", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/MwXkxRam"))()
+end)
+
+bssbtns:Button("Altsego Hub", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/BeeSwarmSimulator.lua')))()
+end)
+
+bssbtns:Button("Kometa Hub", function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/283f3b821c3b385f66824b98a6cca600.lua"))()
 end)
 
 
