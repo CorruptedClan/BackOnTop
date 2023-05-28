@@ -184,6 +184,10 @@ ktybtns:Button("Kitty Black GUI", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/MwXkxRam"))()
 end)
 
+ktybtns:Button("Kitty Grey GUI", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/Z0DPwpNh'),true))()
+end)
+
 bssbtns:Button("Altsego Hub", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/BeeSwarmSimulator.lua')))()
 end)
