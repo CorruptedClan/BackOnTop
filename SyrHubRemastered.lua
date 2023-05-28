@@ -185,7 +185,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/MwXkxRam"))()
 end)
 
 ktybtns:Button("Kitty Grey GUI", function()
-loadstring(game:HttpGet(('https://pastebin.com/raw/Z0DPwpNh'),true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/Z0DPwpNh"),true))()
 end)
 
 bssbtns:Button("Altsego Hub", function()
