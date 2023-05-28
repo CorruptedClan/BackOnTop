@@ -31,6 +31,7 @@ local doorsbtns = mainserv:Channel("Doors")
 local ambtns = mainserv:Channel("Adopt Me")
 local arsbtns = mainserv:Channel("Arsenal")
 local ffbtns = mainserv:Channel("Funky Friday")
+local katbtns = mainserv:Channel("K.A.T")
 
 --channels for tools
 local miscbtns = secserv:Channel("Misc Scripts")
