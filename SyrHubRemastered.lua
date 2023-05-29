@@ -180,12 +180,16 @@ katbtns:Button("Kattoware Hub", function()
 loadstring(game:HttpGet('http://cattoware.tk/main.lua'))()
 end)
 
-ktybtns:Button("Kitty Black GUI", function()
+ktybtns:Button("Kitty Black GUI (trash)", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/MwXkxRam"))()
 end)
 
-ktybtns:Button("Kitty Grey GUI", function()
+ktybtns:Button("Kitty Grey GUI (trash v2)", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/Z0DPwpNh"))()
+end)
+
+ktybtns:Button("Kitty OP GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DarkolymYT/Scriptss/master/KittyGUI.lua"))()
 end)
 
 bssbtns:Button("Altsego Hub", function()
