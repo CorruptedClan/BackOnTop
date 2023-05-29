@@ -107,12 +107,20 @@ tohbtns:Button("Tower Of Hell OP Script", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub', true))()
 end)
 
+tohbtns:Button("Tower of Hell Oasis Hub", function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/bruvzz/oasishub/main/script"))()
+end)
+
 dhbtns:Button("Vertical Hub", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/niqu1337/vertical/main/core/script.lua'))()
 end)
 
 dhbtns:Button("Mango Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rogelioajax/lua/main/MangoHub"))()
+end)
+
+dhbtns:Button("Swag Mode (OP)", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
 end)
 
 hsebtns:Button("Hide and Seek Extreme OP GUI", function()
