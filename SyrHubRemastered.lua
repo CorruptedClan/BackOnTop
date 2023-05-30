@@ -301,7 +301,7 @@ rfbtns:Button("TweedLeak Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TweedLeak/Scripts/main/Rainbow-Friends.lua"))()
 end)
 
-rf:Button("BorkWare", function()
+rfbtns:Button("BorkWare", function()
 loadstring(game:HttpsGet("https://raw.githubusercontent.com/CorruptedClan/BorkHub/main/script.lua:))()
 end)
 
