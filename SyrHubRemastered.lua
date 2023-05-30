@@ -302,7 +302,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TweedLeak/Scripts/mai
 end)
 
 rfbtns:Button("BorkWare", function()
-loadstring(game:HttpsGet("https://raw.githubusercontent.com/CorruptedClan/BorkHub/main/script.lua:))()
+loadstring(game:HttpsGet("https://raw.githubusercontent.com/CorruptedClan/BorkHub/main/script.lua"))()
 end)
 
 --tools
