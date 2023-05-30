@@ -34,7 +34,7 @@ local ffbtns = mainserv:Channel("Funky Friday")
 local katbtns = mainserv:Channel("K.A.T")
 local ktybtns = mainserv:Channel("Kitty")
 local bssbtns = mainserv:Channel("Be Swarm Simulator")
-local fafbtns = mainserv:Channel("Find A Floppa")
+local fafbtns = mainserv:Channel("Find the Floppa")
 local pgybtns = mainserv:Channel("Piggy")
 local tybtns = mainserv:Channel("Tycoons")
 
@@ -217,7 +217,9 @@ for i,v in ipairs(workspace.Floppas:GetChildren()) do
 end
 end)
 
-fafbtns:Button("
+fafbtns:Button("Purple Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Schervi/FloppaHub/main/FloppaHubMain.lua"))()
+end)
 
 
 --tools
