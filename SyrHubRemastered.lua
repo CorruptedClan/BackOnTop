@@ -34,6 +34,9 @@ local ffbtns = mainserv:Channel("Funky Friday")
 local katbtns = mainserv:Channel("K.A.T")
 local ktybtns = mainserv:Channel("Kitty")
 local bssbtns = mainserv:Channel("Be Swarm Simulator")
+local fafbtns = mainserv:Channel("Find A Floppa")
+local pgybtns = mainserv:Channel("Piggy")
+local tybtns = mainserv:Channel("Tycoons")
 
 --channels for tools
 local miscbtns = secserv:Channel("Misc Scripts")
@@ -207,6 +210,14 @@ end)
 bssbtns:Button("Kometa Hub", function()
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/283f3b821c3b385f66824b98a6cca600.lua"))()
 end)
+
+fafbtns:Button("Get all Floppas", function()
+for i,v in ipairs(workspace.Floppas:GetChildren()) do
+   firetouchinterest(v, game.Players.LocalPlayer.Character.PrimaryPart, 0)
+end
+end)
+
+fafbtns:Button("
 
 
 --tools
