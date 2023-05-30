@@ -102,6 +102,10 @@ sw2btns:Button("Sky Wars Hub", function()
 loadstring(Game:HttpGet("https://raw.githubusercontent.com/RedWirePlatinumTwo/RobloxScripts/main/SkywarsScript.lua"))()
 end)
 
+sw2btns:Button("SyrPro: Skywars", function()
+loadstring(Game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/SyrProSkyWars/main/skywarsgui.lua"))()
+end)
+
 bhbtns:Button("Brook Heaven Troll GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MichaelScripter/MiniScript/main/Spy%20gui.lua"))()
 end)
