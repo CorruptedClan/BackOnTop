@@ -302,6 +302,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TweedLeak/Scripts/mai
 
 rf:Button("BorkWare", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/BorkWare/main/Scripts/' .. game.GameId .. ".lua"))(' Watermelon ? ')
+end)
 
 --tools
 miscbtns:Button("Mobile Keyboard", function()
