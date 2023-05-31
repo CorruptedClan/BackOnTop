@@ -110,12 +110,20 @@ bhbtns:Button("Brook Heaven Troll GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MichaelScripter/MiniScript/main/Spy%20gui.lua"))()
 end)
 
+bhbtns:Button("Ice Hub Brook Heaven", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
+
 tohbtns:Button("Tower Of Hell OP Script", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub', true))()
 end)
 
 tohbtns:Button("Tower of Hell Oasis Hub", function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/bruvzz/oasishub/main/script"))()
+end)
+
+tohbtns:Button("Darkrai X hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/scripts/main/TOH", true))()
 end)
 
 dhbtns:Button("Vertical Hub", function()
@@ -134,8 +142,23 @@ hsebtns:Button("Hide and Seek Extreme OP GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/HideAndSeekExtreme.lua"))()
 end)
 
+hsebtns:Button("Frakki GUI", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/HAgidzUN"))()
+end)
+
+hsebtns:Button("OneProtocol HnS Extreme", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OneProtocol/Project/main/Loader", true))()
+end)
+
 ybabtns:Button("Your Bizzare Adventure Autofarm + more", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zakater5/LuaRepo/main/YBA/v3.lua"))()
+end)
+
+ybabtns:Button("YBA script 2", function()
+_G.Options = {
+    ["ToggleKey"] = "Delete",
+}
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/VoidGaster/Scripts/main/" .. tostring(game.PlaceId)),true))()
 end)
 
 lsbtns:Button("Lifting Simulator GUI", function()
@@ -183,8 +206,50 @@ arsbtns:Button("Arsenal OP GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/Init"))()
 end)
 
+arsbtns:Button("Hitbox Expander script", function()
+function getplrsname()
+for i,v in pairs(game:GetChildren()) do
+if v.ClassName == "Players" then
+return v.Name
+end
+end
+end
+local players = getplrsname()
+local plr = game[players].LocalPlayer
+coroutine.resume(coroutine.create(function()
+while  wait(1) do
+coroutine.resume(coroutine.create(function()
+for _,v in pairs(game[players]:GetPlayers()) do
+if v.Name ~= plr.Name and v.Character then
+v.Character.RightUpperLeg.CanCollide = false
+v.Character.RightUpperLeg.Transparency = 10
+v.Character.RightUpperLeg.Size = Vector3.new(13,13,13)
+
+v.Character.LeftUpperLeg.CanCollide = false
+v.Character.LeftUpperLeg.Transparency = 10
+v.Character.LeftUpperLeg.Size = Vector3.new(13,13,13)
+
+v.Character.HeadHB.CanCollide = false
+v.Character.HeadHB.Transparency = 10
+v.Character.HeadHB.Size = Vector3.new(13,13,13)
+
+v.Character.HumanoidRootPart.CanCollide = false
+v.Character.HumanoidRootPart.Transparency = 10
+v.Character.HumanoidRootPart.Size = Vector3.new(13,13,13)
+
+end
+end
+end))
+end
+end))
+end)
+
 ffbtns:Button("Funky Friday Autoplayer (Flxuxs Exclusive)", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ShowerHead-FluxTeam/scripts/main/funky-friday-autoplay"))()
+end)
+
+ffbtns:Button("Funky Friday Wally Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
 end)
 
 katbtns:Button("Kat OP Hub Aim, Autokill etc", function()
