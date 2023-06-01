@@ -273,6 +273,10 @@ katbtns:Button("Kat OP Hub Aim, Autokill etc", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/6rd91GZx", true))()
 end)
 
+katbtns:Button("JNHH Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Kat12/main/Kat"))()
+end)
+
 katbtns:Button("Kattoware Hub", function()
 loadstring(game:HttpGet('http://cattoware.tk/main.lua'))()
 end)
@@ -389,6 +393,10 @@ end)
 
 ntbtns:Button("Black Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AliCode14/scripts/main/ninjatycoon.lua"))()
+end)
+
+ntbtns:Button("Black GUI 2", function()
+loadstring(game:HttpGet"https://thedragonslayer2.github.io")()
 end)
 
 --tools
