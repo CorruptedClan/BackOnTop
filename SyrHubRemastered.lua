@@ -37,6 +37,7 @@ local bssbtns = mainserv:Channel("Be Swarm Simulator")
 local fafbtns = mainserv:Channel("Find the Floppa")
 local pgybtns = mainserv:Channel("Piggy")
 local rfbtns = mainserv:Channel("Rainbow Friends")
+local ntbtns = mainserv:Channel("Ninja Tycoon")
 
 --channels for tools
 local miscbtns = secserv:Channel("Misc Scripts")
@@ -176,8 +177,12 @@ _G.Options = {
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/VoidGaster/Scripts/main/" .. tostring(game.PlaceId)),true))()
 end)
 
-lsbtns:Button("Lifting Simulator GUI", function()
+lsbtns:Button("Yellow GUI", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/zQ9zFW0f"  ,true))()
+end)
+
+lsbtns:Button("Blue GUI", function()
+loadstring(game:HttpGetAsync('https://rentry.co/46649/raw'))()
 end)
 
 ysxbtns:Button("Autofarm GUI", function()
@@ -380,6 +385,10 @@ end)
 
 rfbtns:Button("BorkWare", function()
 loadstring(game:HttpsGet("https://raw.githubusercontent.com/CorruptedClan/BorkHub/main/script.lua"))()
+end)
+
+ntbtns:Button("Black Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AliCode14/scripts/main/ninjatycoon.lua"))()
 end)
 
 --tools
