@@ -2,7 +2,7 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
 --windows
-local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.1.5")
+local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.1.6")
 
 -- servers
 local mainserv = scriptswin:Server("Syr Scripts", "cool")
