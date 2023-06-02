@@ -147,7 +147,7 @@ sw2btns:Button("SyrPro: Skywars", function()
 loadstring(Game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/SyrProSkyWars/main/skywarsgui.lua"))()
 end)
 
-sw2btns:Button("Green GUI", functiom()
+sw2btns:Button("Green GUI", function()
 loadstring(game:HttpGet("https://paste.ee/r/r9gnA", true))()
 end)
 
