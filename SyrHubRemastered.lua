@@ -435,7 +435,7 @@ tsgbtns:Button("Survival GUI", function()
 loadstring(game:HttpGet("https://github.com/joeengo/exploiting/blob/main/tsg.lua?raw=true", true))()
 end)
 
-tprrbtns:Button("Tape Farm", functio()
+tprrbtns:Button("Tape Farm", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/TPRR/main/tapefarm.lua", true))()
 end)
 
