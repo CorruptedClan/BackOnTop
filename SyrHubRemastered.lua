@@ -431,7 +431,7 @@ tsgbtns:Button("Survival GUI", function()
 loadstring(game:HttpGet("https://github.com/joeengo/exploiting/blob/main/tsg.lua?raw=true", true))()
 end)
 
-tprrbtns:Button("Tape Farm", functiom()
+tprrbtns:Button("Tape Farm", functio()
 local Player = game.Players.LocalPlayer
 local char = Player.Character.HumanoidRootPart
 while wait(0) do
