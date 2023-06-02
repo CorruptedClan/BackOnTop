@@ -38,6 +38,10 @@ local fafbtns = mainserv:Channel("Find the Floppa")
 local pgybtns = mainserv:Channel("Piggy")
 local rfbtns = mainserv:Channel("Rainbow Friends")
 local ntbtns = mainserv:Channel("Ninja Tycoon")
+local tsgbtns = mainserv:Channel("The Survival Game")
+local tprrbtns = mainserv:Channel("The Pizzeria Roleplay Remastered")
+local rt2btns = mainserv:Channel("Restaurant Tycoon 2")
+local mrtbtns = mainserv:Channel("My Restaurant Tycoon")
 
 --channels for tools
 local miscbtns = secserv:Channel("Misc Scripts")
@@ -398,6 +402,9 @@ end)
 ntbtns:Button("Black GUI 2", function()
 loadstring(game:HttpGet"https://thedragonslayer2.github.io")()
 end)
+
+tprrbtns:Button("Tape Farm", function()
+
 
 --tools
 miscbtns:Button("Mobile Keyboard", function()
