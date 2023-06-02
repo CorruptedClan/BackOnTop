@@ -233,6 +233,7 @@ end)
 
 klbtns:Button("BlackTrap Hub", function()
 loadstring(game:HttpGetAsync("https://blacktrap.org/blacktrap/users/checkpoint/Auth.txt"))()
+end)
 
 evadebtns:Button("Evade Script OP", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua"))()
