@@ -64,7 +64,7 @@ slbtns:Button("Premier Hub", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/TrustsenseDev/Utilities/main/Premier.lua', true))()
 end)
 
-slbtns:Button("V.G Hub (better than Premier)", function()
+slbtns:Button("V.G Hub", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 end)
 
@@ -111,12 +111,28 @@ mm2btns:Button("Grey Hub", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel'),true))()
 end)
 
+mm2btns:Button("Purple Hub", function()
+loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+end)
+
+mm2btns:Button("Black Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drifter0507/scripts/main/mm2", true))()
+end)
+
 rebtns:Button("Ragdoll Engine Troll Hub", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/PB8ER7j3"))()
 end)
 
+rebtns:Button("Black GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua"))()
+end)
+
 bwbtns:Button("VapeV4", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+bwbtns:Button("NightBed Script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NTDCore/NightbedForRoblox/main/MainScript.lua", true))()
 end)
 
 swbtns:Button("Sky Wars by Voxels Vape V4", function()
@@ -129,6 +145,10 @@ end)
 
 sw2btns:Button("SyrPro: Skywars", function()
 loadstring(Game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/SyrProSkyWars/main/skywarsgui.lua"))()
+end)
+
+sw2btns:Button("Green GUI", functiom()
+loadstring(game:HttpGet("https://paste.ee/r/r9gnA", true))()
 end)
 
 bhbtns:Button("Brook Heaven Troll GUI", function()
@@ -210,6 +230,9 @@ klbtns:Button("Autofarm, Grab Fruits + more!", function()
 local request = (syn and syn.request) or (http and http.request) or http_request
 loadstring(request({["Url"]='https://x7.software',["Method"]='GET'}).Body)("X7-a5KsoQGw")
 end)
+
+klbtns:Button("BlackTrap Hub", function()
+loadstring(game:HttpGetAsync("https://blacktrap.org/blacktrap/users/checkpoint/Auth.txt"))()
 
 evadebtns:Button("Evade Script OP", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua"))()
