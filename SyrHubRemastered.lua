@@ -436,15 +436,7 @@ loadstring(game:HttpGet("https://github.com/joeengo/exploiting/blob/main/tsg.lua
 end)
 
 tprrbtns:Button("Tape Farm", functio()
-local Player = game.Players.LocalPlayer
-local char = Player.Character.HumanoidRootPart
-while wait(0) do
-if game.Workspace:WaitForChild("Tape") then
-   game.Workspace.Tape.CFrame = char.CFrame
-   else
-       print("Couldn't find Tape")
-end
-end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/TPRR/main/tapefarm.lua", true))()
 end)
 
 rt2btns:Button("One Protocol Hub", function()
