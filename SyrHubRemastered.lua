@@ -12,6 +12,7 @@ local secserv = scriptswin:Server("Tool Scripts & Misc", "")
 local slbtns = mainserv:Channel("Shindo Life")
 local bfbtns = mainserv:Channel("Blox Fruits")
 local psxbtns = mainserv:Channel("Pet Simulator X")
+local mm2btns = mainserv:Channel("Murder Mystery 2")
 local rebtns = mainserv:Channel("Ragdoll Engine")
 local bwbtns = mainserv:Channel("Bed Wars")
 local swbtns = mainserv:Channel("Sky Wars by Voxels")
@@ -104,6 +105,10 @@ end)
 
 psxbtns:Button("Comet Farm (Rejoin to turn off)", function()
 getgenv().WEBHOOK_URL = "https://discord.com/api/webhooks/1090853107816214548/Vxcs9dIe4jRfqeVbX6iHJn7ZifN4_kCPfJnI17LIINOqPfBtjzXjdG0I7B93mDORO5jS" tooloadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/Scripts2023/main/COMETFARM"))()  
+end)
+
+mm2btns:Button("Grey Hub", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel'),true))()
 end)
 
 rebtns:Button("Ragdoll Engine Troll Hub", function()
@@ -403,8 +408,29 @@ ntbtns:Button("Black GUI 2", function()
 loadstring(game:HttpGet"https://thedragonslayer2.github.io")()
 end)
 
-tprrbtns:Button("Tape Farm", function()
+tsgbtns:Button("Survival GUI", function()
+loadstring(game:HttpGet("https://github.com/joeengo/exploiting/blob/main/tsg.lua?raw=true", true))()
+end)
 
+tprrbtns:Button("Tape Farm", functiom()
+local Player = game.Players.LocalPlayer
+local char = Player.Character.HumanoidRootPart
+while wait(0) do
+if game.Workspace:WaitForChild("Tape") then
+   game.Workspace.Tape.CFrame = char.CFrame
+   else
+       print("Couldn't find Tape")
+end
+end
+end)
+
+rt2btns:Button("One Protocol Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OneProtocol/Project/main/Loader", true))() 
+end)
+
+mrtbtns:Button("Random Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OneProtocol/Project/main/Loader", true))() 
+end)
 
 --tools
 miscbtns:Button("Mobile Keyboard", function()
