@@ -452,7 +452,7 @@ loadstring(game:HttpGet("https://github.com/joeengo/exploiting/blob/main/tsg.lua
 end)
 
 tsgbtns:Button("Random Hub", function()
-loadstring(game:HttpGet(“https://pastebin.com/raw/j5dV9HrH”))()
+loadstring(game:HttpGet("https://pastebin.com/raw/j5dV9HrH"))()
 end)
 
 tprrbtns:Button("Tape Farm", function()
