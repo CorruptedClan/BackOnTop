@@ -5,7 +5,7 @@ local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/daw
 local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.1.7b")
 
 -- servers
-local mainserv = scriptswin:Server("Syr Scripts", "https://create.roblox.com/dashboard/creations/marketplace/13634336143/configure")
+local mainserv = scriptswin:Server("Syr Scripts", "https://www.roblox.com/catalog/13646501116/SyrHubLogo")
 local secserv = scriptswin:Server("Tool Scripts & Misc", "")
 
 -- channels
