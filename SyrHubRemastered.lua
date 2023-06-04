@@ -2,11 +2,12 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
 --windows
-local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.1.7b")
+local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.1.7c")
 
 -- servers
 local mainserv = scriptswin:Server("Syr Scripts", "")
 local secserv = scriptswin:Server("Tool Scripts & Misc", "")
+local trdserv = scriptswin:Server("FE/Fun Scripts", "")
 
 -- channels
 local slbtns = mainserv:Channel("Shindo Life")
@@ -44,8 +45,9 @@ local tprrbtns = mainserv:Channel("The Pizzeria Roleplay Remastered")
 local rt2btns = mainserv:Channel("Restaurant Tycoon 2")
 local mrtbtns = mainserv:Channel("My Restaurant Tycoon")
 
---channels for tools
-local miscbtns = secserv:Channel("Misc Scripts")
+--channels for other things
+local miscbtns = secserv:Channel("Tool Scripts")
+local funbtns = trdserv:Channel("Fun Scripts")
 
 --scripts
 bfbtns:Button("Mukuro Hub BF", function()
@@ -58,6 +60,10 @@ end)
 
 bfbtns:Button("Zaque Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Mei2232/ZaqueHub/main/Zaque%20Hub"))()
+end)
+
+bfbtns:Button("Mukuro Hub V2", function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
 end)
 
 slbtns:Button("Premier Hub", function()
@@ -218,6 +224,7 @@ ysxbtns:Button("Autofarm GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/23"))()
 end)
 
+
 ksagbtns:Button("OP GUI Autofarm + more", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PerfectusMim/OXYGEN-HUB-/main/hub"))()
 end)
@@ -239,6 +246,10 @@ evadebtns:Button("Evade Script OP", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua"))()
 end)
 
+evadebtns:Button("Darkrai X Evade", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
+end)
+
 doorsbtns:Button("Doors Black GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Doors"))()
 end)
@@ -257,6 +268,10 @@ end)
 
 arsbtns:Button("Arsenal OP GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/Init"))()
+end)
+
+arsbtns:Button("Arctic Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JusticeValley/Antarctic-Hub/main/New.lua", true))()
 end)
 
 arsbtns:Button("Hitbox Expander script", function()
@@ -436,12 +451,47 @@ tsgbtns:Button("Survival GUI", function()
 loadstring(game:HttpGet("https://github.com/joeengo/exploiting/blob/main/tsg.lua?raw=true", true))()
 end)
 
+tsgbtns:Button("Random Hub", function()
+loadstring(game:HttpGet(“https://pastebin.com/raw/j5dV9HrH”))()
+end)
+
 tprrbtns:Button("Tape Farm", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/TPRR/main/tapefarm.lua", true))()
 end)
 
 rt2btns:Button("One Protocol Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/OneProtocol/Project/main/Loader", true))() 
+end)
+
+rt2btns:Button("Basic Script", function()
+warn("Requiring API")do
+loadstring(game:HttpGet("https://pastebin.com/raw/KMc6aBky"))();
+end warn("API Loaded")
+
+local child = object.child
+local descendant = object.descendant
+local check = object.check
+
+local Tycoon = game.Players.LocalPlayer.Tycoon.Value
+descendant.foreach(Tycoon.Items.OftenFiltered.Surface,"Bill",function(Bill)
+local Settings = {
+["name"] = "CollectBill",
+["model"] = Bill.Parent
+}
+
+game.ReplicatedStorage.Events.ClientTycoonInput:FireServer(Tycoon,Settings)
+end)
+
+local Connection,Code = descendant.on_add(Tycoon.Items.OftenFiltered.Surface,function(Bill)
+check.it(Bill.Name == "Bill",function()
+local Settings = {
+["name"] = "CollectBill",
+["model"] = Bill.Parent
+}
+
+game.ReplicatedStorage.Events.ClientTycoonInput:FireServer(Tycoon,Settings)
+end)
+end)
 end)
 
 mrtbtns:Button("Random Hub", function()
@@ -477,4 +527,14 @@ game:GetService("UserInputService").JumpRequest:connect(function()
 		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
 	end
 end)
+end)
+
+--third server Scripts
+
+funbtns:Button("Orbit script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/suno-ui/Universal-Orbit/main/main.lua", true))("Orbit FE")
+end)
+
+funbtns:Button("RemX Hub", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Henry887/RemX-Script-Hub/main/main.lua'),true))()
 end)
