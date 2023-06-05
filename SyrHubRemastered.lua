@@ -2,7 +2,7 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
 --windows
-local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.1.7c")
+local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.1.7d")
 
 -- servers
 local mainserv = scriptswin:Server("Syr Scripts", "")
@@ -250,19 +250,23 @@ evadebtns:Button("Darkrai X Evade", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
 end)
 
-doorsbtns:Button("Doors Black GUI", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Doors"))()
+doorsbtns:Button("Doors GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mazzikasjjzjzj/Key/main/DOORS%20%20%5BNEW%5D"))()
 end)
 
-doorsbtns:Button("Doors Green GUI", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+doorsbtns:Button("Doors Gray GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua"))()
 end)
 
-doorsbtns:Button("Never Lose HUB", function()
+doorsbtns:Button("MSDOORS Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/neverlose.xyz/main/Doors.lua"))()
 end)
 
 ambtns:Button("Adopt Me Autofarm", function()
+loadstring(game:HttpGet("https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua"))()
+end)
+
+ambtns:Button("Prodigy X", function()
 loadstring(game:HttpGet("https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua"))()
 end)
 
@@ -441,6 +445,61 @@ end)
 
 ntbtns:Button("Black Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AliCode14/scripts/main/ninjatycoon.lua"))()
+end)
+
+ntbtns:Button("Quiz Solver", function()
+--BROUGHT TO YOU BY RSCRIPTS.NET--
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/preztel/AzureLibrary/master/uilib.lua", true))()
+
+local Main = Library:CreateTab("Ninja Simulator", "Functions", false)
+
+Main:CreateToggle(
+   "Auto Quiz Solver",
+   function(kdss)
+       _G.toggles1dss = kdss or false
+       while _G.toggles1dss and wait(2) do
+           for i, v in pairs(game:GetService("Workspace")["TimedEvent_Quiz"]:GetDescendants()) do
+               if string.find(v.Name, "AnswerTarget") and v:FindFirstChild("OnDied") then
+                   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                       v.HumanoidRootPart.CFrame + v.HumanoidRootPart.CFrame.lookVector * -1
+               end
+           end
+           wait(0.4)
+           plr = game.Players.LocalPlayer.Character
+           game:GetService("Workspace")[plr.Name].Combat.Attack:FireServer()
+           local N = game:GetService("VirtualInputManager")
+           N:SendKeyEvent(true, "F", false, game)
+       end
+   end
+)
+Main:CreateToggle(
+   "Auto Click",
+   function(kd55fs)
+       _G.toggle5fs21 = kd55fs or false
+       game:GetService("RunService").Stepped:connect(
+           function()
+               if _G.toggle5fs21 then
+                   fireclickdetector(
+                       game.workspace["Zednov's Tycoon Kit"].Tycoons[game.Players.LocalPlayer.Team.Name].PurchasedObjects.Mine.Clicker.ClickDetector
+                   )
+               end
+           end
+       )
+   end
+)
+Main:CreateButton(
+   "Made By: Bebo Mods",
+   function()
+       setclipboard("https://discord.com/invite/sdUSPyY65T")
+   end
+)
+Main:CreateButton(
+   "Join My Discord",
+   function()
+       setclipboard("https://discord.com/invite/sdUSPyY65T")
+   end
+)
 end)
 
 ntbtns:Button("Black GUI 2", function()
