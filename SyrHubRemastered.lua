@@ -259,7 +259,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/zoophiliaphobic/POOPD
 end)
 
 doorsbtns:Button("MSDOORS Hub", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/neverlose.xyz/main/Doors.lua"))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua"),true))()
 end)
 
 ambtns:Button("Adopt Me Autofarm", function()
