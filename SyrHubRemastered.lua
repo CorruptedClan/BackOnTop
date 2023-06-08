@@ -410,7 +410,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/prezt
 
 local Main = Library:CreateTab("Ninja Simulator", "Functions", false)
 
-Main:CreateToggle(
+Main:CreateToggle()
    "Auto Quiz Solver",
    function(kdss)
        _G.toggles1dss = kdss or false
