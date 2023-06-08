@@ -508,7 +508,6 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/Henry887/RemX-Script
 end)
 
 funbtns:Button("Headless FE", function()
--by qjbnbalivemobile1#0946
 
 --Objects
 local ScreenGui = Instance.new("ScreenGui")
