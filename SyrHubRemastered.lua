@@ -2,7 +2,7 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
 --windows
-local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.1.7d")
+local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.1.8")
 
 -- servers
 local mainserv = scriptswin:Server("Syr Scripts", "")
@@ -125,6 +125,16 @@ mm2btns:Button("Black Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Drifter0507/scripts/main/mm2", true))()
 end)
 
+mm2btns:Button("Eclipse UI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+end)
+
+mm2btns:Button("Eclipse Hub V2", function()
+getgenv().mainKey = "nil";
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+end)
+
 rebtns:Button("Ragdoll Engine Troll Hub", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/PB8ER7j3"))()
 end)
@@ -225,8 +235,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/ma
 end)
 
 
-ksagbtns:Button("OP GUI Autofarm + more", function()
+ksagbtns:Button("Oxygen Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PerfectusMim/OXYGEN-HUB-/main/hub"))()
+end)
+
+ksagbtns:Button("Platinum Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Loader/main/PlatiniumLoader"))()
 end)
 
 ims2btns:Button("Iron Man Simulator 2 Op Hub", function()
@@ -240,6 +254,11 @@ end)
 
 klbtns:Button("BlackTrap Hub", function()
 loadstring(game:HttpGetAsync("https://blacktrap.org/blacktrap/users/checkpoint/Auth.txt"))()
+end)
+
+klbtns:Button("Hyper Hub", function()
+repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/Hyper/main/script.lua"))()
 end)
 
 evadebtns:Button("Evade Script OP", function()
@@ -352,6 +371,11 @@ end)
 bssbtns:Button("Kometa Hub", function()
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/283f3b821c3b385f66824b98a6cca600.lua"))()
 end)
+
+bssbtns:Button("Kocmoc V3", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Boxking776/kocmoc/main/kocmoc-remastered.lua"))()
+end)
+
 
 fafbtns:Button("Get all Floppas", function()
 for i,v in ipairs(workspace.Floppas:GetChildren()) do
@@ -588,6 +612,10 @@ game:GetService("UserInputService").JumpRequest:connect(function()
 end)
 end)
 
+miscbtns:Button("Fly GUI V3", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
 --third server Scripts
 
 funbtns:Button("Orbit script", function()
@@ -596,4 +624,245 @@ end)
 
 funbtns:Button("RemX Hub", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Henry887/RemX-Script-Hub/main/main.lua'),true))()
+end)
+
+funbtns:Button("Headless FE", function()
+-by qjbnbalivemobile1#0946
+
+--Objects
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local Headless = Instance.new("TextButton")
+local OneLeg = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+
+--Properties:
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.new(0, 0, 0)
+main.Position = UDim2.new(0.0203577988, 0, 0.641277611, 0)
+main.Size = UDim2.new(0, 332, 0, 211)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.new(1, 0, 1)
+title.Size = UDim2.new(0, 332, 0, 31)
+title.Font = Enum.Font.GothamBold
+title.Text = "qjbnbalivemobile1#0946"
+title.TextColor3 = Color3.new(0, 0, 0)
+title.TextSize = 17
+
+Headless.Name = "Headless"
+Headless.Parent = main
+Headless.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+Headless.Position = UDim2.new(0.036144577, 0, 0.379146934, 0)
+Headless.Size = UDim2.new(0, 110, 0, 50)
+Headless.Font = Enum.Font.GothamBold
+Headless.Text = "Headless"
+Headless.TextColor3 = Color3.new(0, 0, 0)
+Headless.TextScaled = true
+Headless.TextSize = 10
+Headless.TextWrapped = true
+Headless.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Head.Transparency = 1
+for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
+if (v:IsA("Decal")) then
+v:Destroy()
+end
+end
+end)
+
+OneLeg.Name = "One Leg"
+OneLeg.Parent = main
+OneLeg.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+OneLeg.Position = UDim2.new(0.614457846, 0, 0.379146934, 0)
+OneLeg.Size = UDim2.new(0, 110, 0, 50)
+OneLeg.Font = Enum.Font.GothamBold
+OneLeg.Text = "One Leg"
+OneLeg.TextColor3 = Color3.new(0, 0, 0)
+OneLeg.TextScaled = true
+OneLeg.TextSize = 14
+OneLeg.TextWrapped = true
+OneLeg.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character['Right Leg']:remove()
+end)
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.new(1, 0, 0)
+close.Position = UDim2.new(0.879518092, 0, 0, 0)
+close.Size = UDim2.new(0, 40, 0, 31)
+close.Font = Enum.Font.GothamBlack
+close.Text = "X"
+close.TextColor3 = Color3.new(0, 0, 0)
+close.TextScaled = true
+close.TextSize = 14
+close.TextWrapped = true
+close.MouseButton1Down:connect(function()
+main.Visible = false
+openmain.Visible = true
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.new(1, 1, 1)
+openmain.Position = UDim2.new(.001, 0, .79, 0)
+openmain.Size = UDim2.new(0, 100, 0, 28)
+openmain.Active = true
+openmain.Draggable = true
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.new(1, 0, 0)
+open.Size = UDim2.new(0, 100, 0, 28)
+open.Font = Enum.Font.GothamBold
+open.Text = "OPEN"
+open.TextColor3 = Color3.new(0, 0, 0)
+open.TextSize = 18
+open.TextWrapped = true
+open.MouseButton1Down:connect(function()
+openmain.Visible = false
+main.Visible = true
+end)
+end)
+
+funbtns:Button("FE Fling GUI (R6 only)", function()
+--BROUGHT TO YOU BY RSCRIPTS.NET!--
+
+
+local lp = game:FindService("Players").LocalPlayer
+
+local function gplr(String)
+	local Found = {}
+	local strl = String:lower()
+	if strl == "all" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			table.insert(Found,v)
+		end
+	elseif strl == "others" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name ~= lp.Name then
+				table.insert(Found,v)
+			end
+		end 
+	elseif strl == "me" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name == lp.Name then
+				table.insert(Found,v)
+			end
+		end 
+	else
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name:lower():sub(1, #String) == String:lower() then
+				table.insert(Found,v)
+			end
+		end 
+	end
+	return Found 
+end
+
+local function notif(str,dur)
+	game:FindService("StarterGui"):SetCore("SendNotification", {
+		Title = "yeet gui",
+		Text = str,
+		Icon = "rbxassetid://2005276185",
+		Duration = dur or 3
+	})
+end
+
+--// sds
+
+local h = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local Top = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+
+h.Name = "h"
+h.Parent = game:GetService("CoreGui")
+h.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = h
+Main.Active = true
+Main.Draggable = true
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.174545452, 0, 0.459574461, 0)
+Main.Size = UDim2.new(0, 454, 0, 218)
+Main.Image = "rbxassetid://2005276185"
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Top.BorderSizePixel = 0
+Top.Size = UDim2.new(0, 454, 0, 44)
+
+Title.Name = "Title"
+Title.Parent = Top
+Title.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0, 0, 0.295454562, 0)
+Title.Size = UDim2.new(0, 454, 0, 30)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "FE Yeet Gui (trollface edition)"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+TextBox.Parent = Main
+TextBox.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0704845786, 0, 0.270642221, 0)
+TextBox.Size = UDim2.new(0, 388, 0, 62)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "Who do i destroy(can be shortened)"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.10352423, 0, 0.596330225, 0)
+TextButton.Size = UDim2.new(0, 359, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Cheese em'"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextButton.MouseButton1Click:Connect(function()
+	local Target = gplr(TextBox.Text)
+	if Target[1] then
+		Target = Target[1]
+		
+		local Thrust = Instance.new('BodyThrust', lp.Character.HumanoidRootPart)
+		Thrust.Force = Vector3.new(9999,9999,9999)
+		Thrust.Name = "YeetForce"
+		repeat
+			lp.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+			Thrust.Location = Target.Character.HumanoidRootPart.Position
+			game:FindService("RunService").Heartbeat:wait()
+		until not Target.Character:FindFirstChild("Head")
+	else
+		notif("Invalid player")
+	end
+end)
+
+--//fsddfsdf
+notif("Loaded successfully! Created by scuba#0001", 5)
 end)
