@@ -408,11 +408,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/quizSol
 end)
 
 ntbtns:Button("Black GUI 2", function()
-loadstring(game:HttpGet"https://thedragonslayer2.github.io")()
+loadstring(game:HttpGet("https://thedragonslayer2.github.io"))()
 end)
 
 tsgbtns:Button("Survival GUI", function()
-loadstring(game:HttpGet("https://github.com/joeengo/exploiting/blob/main/tsg.lua?raw=true", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/joeengo/exploiting/main/tsg/tsg.lua"))()
 end)
 
 tsgbtns:Button("Random Hub", function()
