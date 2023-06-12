@@ -2,7 +2,7 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
 --windows
-local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.1.8")
+local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.1.9")
 
 -- servers
 local mainserv = scriptswin:Server("Syr Scripts", "")
@@ -44,6 +44,10 @@ local tsgbtns = mainserv:Channel("The Survival Game")
 local tprrbtns = mainserv:Channel("The Pizzeria Roleplay Remastered")
 local rt2btns = mainserv:Channel("Restaurant Tycoon 2")
 local mrtbtns = mainserv:Channel("My Restaurant Tycoon")
+local psbtns = mainserv:Channel("Project Slayers")
+local bpbtns = mainserv:Channel("Breaking Point")
+local jbbtns = mainserv:Channel("Jailbreak")
+local ddbtns = mainserv:Channel("Double Down")
 
 --channels for other things
 local miscbtns = secserv:Channel("Tool Scripts")
@@ -462,6 +466,44 @@ mrtbtns:Button("Random Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/OneProtocol/Project/main/Loader", true))() 
 end)
 
+pjbtns:Button("OniHub V2", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Phyoue/WlyMalV2/main/OniHubV2"))()
+end)
+
+pjbtns:Button("Sylveon Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ogamertv12/SylveonHub/main/Mobile.lua"))()
+end)
+
+bpbtns:Button("Outlaws Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MostafaXc00dy/MostafaXc00dy/main/Outlaws%20Hub/Breaking%20Point%20V7.lua"))()
+end)
+
+bpbtns:Button("Buster GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ColdStep2/Breaking-Point-Funny-Squid-Hax/main/Breaking%20Point%20Funny%20Squid%20Hax",true))()
+end)
+
+bpbtns:Button("Inf credits (dds only)", function()
+getgenv().AutoFarm = true --enables / disables AutoFarm
+getgenv().ServerHop = false --enables / disables server hop, add to autoexec if you enable this.
+loadstring(game:HttpGet("https://raw.githubusercontent.com/2vsh/breakingpoint/main/mainscript.lua"))()
+end)
+
+jbbtns:Button("Sensation Hub", function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/99606f43e2dac85f6afc1d93d0a02d2d.lua"))()
+end)
+
+jbbtns:Button("Evo V4", function()
+loadstring(game:HttpGetAsync("https://projectevo.xyz/v4/script.lua", true))()
+end)
+
+jbbtns:Button("Flare Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/flareG"))()
+end)
+
+ddbtns:Button("Auto Block Drop win", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Misc%20Scripts/DoubleDown.lua?raw=true"))()
+end)
+
 --tools
 miscbtns:Button("Mobile Keyboard", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
@@ -495,6 +537,10 @@ end)
 
 miscbtns:Button("Fly GUI V3", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
+miscbtns:Button("Fullbright", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/06iG6YkU", true))()
 end)
 
 --third server Scripts
@@ -745,4 +791,12 @@ end)
 
 --//fsddfsdf
 notif("Loaded successfully! Created by scuba#0001", 5)
+end)
+
+funbtns:Button("FE Spider", function()
+loadstring(game:HttpGet("https://pastebin.com/NnewD07n"))()
+end)
+
+funbtns:Button("FE Walk on Walls", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/geUZHr7B"))()
 end)
