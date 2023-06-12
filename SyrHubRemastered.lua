@@ -466,11 +466,11 @@ mrtbtns:Button("Random Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/OneProtocol/Project/main/Loader", true))() 
 end)
 
-pjbtns:Button("OniHub V2", function()
+psbtns:Button("OniHub V2", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Phyoue/WlyMalV2/main/OniHubV2"))()
 end)
 
-pjbtns:Button("Sylveon Hub", function()
+psbtns:Button("Sylveon Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ogamertv12/SylveonHub/main/Mobile.lua"))()
 end)
 
