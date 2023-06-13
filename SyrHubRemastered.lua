@@ -500,8 +500,8 @@ jbbtns:Button("Flare Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/flareG"))()
 end)
 
-ddbtns:Button("Closed for rework :(", function()
-print("WAIT FOR REWORK")
+ddbtns:Button("ZenX Beta (Free)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/EZrobux/main/DoubleDownPremium.lua"))()
 end)
 
 --tools
