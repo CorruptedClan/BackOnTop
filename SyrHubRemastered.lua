@@ -537,6 +537,7 @@ end)
 
 apbtns:Button("Cyan GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XCD7/x/main/x", true))()
+end)
 
 --tools
 miscbtns:Button("Mobile Keyboard", function()
