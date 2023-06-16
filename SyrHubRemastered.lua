@@ -2,7 +2,7 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
 --windows
-local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.1.9")
+local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.2.0")
 
 -- servers
 local mainserv = scriptswin:Server("Syr Scripts", "")
@@ -48,6 +48,10 @@ local psbtns = mainserv:Channel("Project Slayers")
 local bpbtns = mainserv:Channel("Breaking Point")
 local jbbtns = mainserv:Channel("Jailbreak")
 local ddbtns = mainserv:Channel("Double Down")
+local mvsdbtns = mainserv:Channel("Murder Vs Sherrif Duel")
+local vtbtns = mainserv:Channel("Vehicle Tycoon")
+local apbtns = mainserv:Channel("Apeirophobia")
+local blbtns = mainserv:Channel("Boxing League")
 
 --channels for other things
 local miscbtns = secserv:Channel("Tool Scripts")
@@ -68,6 +72,10 @@ end)
 
 bfbtns:Button("Mukuro Hub V2", function()
 loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+end)
+
+bfbtns:Button("NevaHub (best)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2"))()
 end)
 
 slbtns:Button("Premier Hub", function()
@@ -145,6 +153,10 @@ end)
 
 rebtns:Button("Black GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua"))()
+end)
+
+rebtns:Button("Mystery Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/i4mitty/MysteryHub/main/MysteryHub%20-%20Ragdoll%20Engine.lua"))()
 end)
 
 bwbtns:Button("VapeV4", function()
@@ -339,10 +351,13 @@ end
 end))
 end)
 
+arsbtns:Button("Boltz Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main"))()
+end)
+
 ffbtns:Button("Funky Friday Autoplayer (Flxuxs Exclusive)", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ShowerHead-FluxTeam/scripts/main/funky-friday-autoplay"))()
 end)
-
 
 katbtns:Button("Kat OP Hub Aim, Autokill etc", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/6rd91GZx", true))()
@@ -354,6 +369,10 @@ end)
 
 katbtns:Button("Kattoware Hub", function()
 loadstring(game:HttpGet('http://cattoware.tk/main.lua'))()
+end)
+
+katbtns:Button("Owl Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
 end)
 
 ktybtns:Button("Kitty Black GUI (trash)", function()
@@ -500,9 +519,24 @@ jbbtns:Button("Flare Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/flareG"))()
 end)
 
-ddbtns:Button("ZenX Beta (Free)", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/EZrobux/main/DoubleDownPremium.lua"))()
+ddbtns:Button("ZenX Beta (Paid)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/BestOutThere/main/ZenX.lua"))()
 end)
+
+mvsdbtns:Button("Black Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0murder", true))()
+end)
+
+vtbtns:Button("Owl Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+end)
+
+apbtns:Button("Shadow Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowScripts4Roblox/PROTECTEDLUA/main/Scripts/APEIROPHOBIA/1.0.%3Blua"))()
+end)
+
+apbtns:Button("Cyan GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XCD7/x/main/x", true))()
 
 --tools
 miscbtns:Button("Mobile Keyboard", function()
@@ -799,4 +833,12 @@ end)
 
 funbtns:Button("FE Walk on Walls", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/geUZHr7B"))()
+end)
+
+funbtns:Button("FE Chat Troll", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/MdSA4fn5"))()
+end)
+
+funbtns:Button("FE Big Head V3", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sysGhost-aka-BiKode/Scripts2022/main/BigHeadV3_Unpatched", true))()
 end)
