@@ -539,6 +539,10 @@ apbtns:Button("Cyan GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XCD7/x/main/x", true))()
 end)
 
+blbtns:Button("Yogurt Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yogurtsss/trashs-scripts-obfuscated/main/Boxing%20League", true))()
+end)
+
 --tools
 miscbtns:Button("Mobile Keyboard", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
