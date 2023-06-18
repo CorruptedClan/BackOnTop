@@ -70,8 +70,8 @@ bfbtns:Button("Zaque Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Mei2232/ZaqueHub/main/Zaque%20Hub"))()
 end)
 
-bfbtns:Button("Mukuro Hub V2", function()
-loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+bfbtns:Button("Domadico Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
 end)
 
 bfbtns:Button("NevaHub (best)", function()
