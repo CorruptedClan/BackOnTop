@@ -70,7 +70,7 @@ bfbtns:Button("Zaque Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Mei2232/ZaqueHub/main/Zaque%20Hub"))()
 end)
 
-bfbtns:Button("Domadico Hub", function()
+bfbtns:Button("Domadic Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
 end)
 
