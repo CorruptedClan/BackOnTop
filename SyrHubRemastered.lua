@@ -2,7 +2,7 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
 --windows
-local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.2.0")
+local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.2.1")
 
 -- servers
 local mainserv = scriptswin:Server("Syr Scripts", "")
@@ -52,6 +52,11 @@ local mvsdbtns = mainserv:Channel("Murder Vs Sherrif Duel")
 local vtbtns = mainserv:Channel("Vehicle Tycoon")
 local apbtns = mainserv:Channel("Apeirophobia")
 local blbtns = mainserv:Channel("Boxing League")
+local plsbtns = mainserv:Channel("Pls Donate")
+local madbtns = mainserv:Channel("Mad City")
+local ftfbtns = mainserv:Channel("Flee the Facility")
+local zubtns = mainserv:Channel("Zombie Uprising")
+local prisonbtns = mainserv:Channel("Prison Life")
 
 --channels for other things
 local miscbtns = secserv:Channel("Tool Scripts")
@@ -74,8 +79,16 @@ bfbtns:Button("Domadic Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
 end)
 
-bfbtns:Button("NevaHub (best)", function()
+bfbtns:Button("String X", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/StringV2/StringHub/main/BF.txt", true))()
+end)
+
+bfbtns:Button("NevaHub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2"))()
+end)
+
+bfbtns:Button("Heater Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeatHuh/HeaterHub/main/HeaterLoader"))()
 end)
 
 slbtns:Button("Premier Hub", function()
@@ -153,6 +166,10 @@ end)
 
 rebtns:Button("Black GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua"))()
+end)
+
+rebtns:Button("Ragdoll GUI", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/T7weKqag", true))()
 end)
 
 rebtns:Button("Mystery Hub", function()
@@ -485,6 +502,10 @@ mrtbtns:Button("Random Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/OneProtocol/Project/main/Loader", true))() 
 end)
 
+mrtbtns:Button("System Exodus", function()
+loadstring(game:HttpGet("https://system-exodus.com/scripts/MyRestaurant/MyRestaurant.lua", true))()
+end)
+
 psbtns:Button("OniHub V2", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Phyoue/WlyMalV2/main/OniHubV2"))()
 end)
@@ -541,6 +562,34 @@ end)
 
 blbtns:Button("Yogurt Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yogurtsss/trashs-scripts-obfuscated/main/Boxing%20League", true))()
+end)
+
+plsbtns:Button("Black GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/autofarm"))()
+end)
+
+madbtns:Button("Mcarch Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Cesare0328/my-scripts/main/MCARCH2.lua", true))()
+end)
+
+madbtns:Button("Black Hub", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/8Q7y93US", true))()
+end)
+
+ftfbtns:Button("Black GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/actz2196/fortnite/main/FleeTheFacility.lua", true))()
+end)
+
+ftfbtns:Button("FTF HAX", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LeviTheOtaku/roblox-scripts/main/FTFHAX.lua", true))()
+end)
+
+zubtns:Button("Basic Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Zombie%20Uprising/ZombieUprisingGUI"))()
+end)
+
+prisonbtns:Button("Nexus Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))()
 end)
 
 --tools
