@@ -549,6 +549,10 @@ mvsdbtns:Button("Black Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0murder", true))()
 end)
 
+mvsdbtns:Button("SyrHub's MvS Duel", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/MenTU2C0"))()
+end)
+
 vtbtns:Button("Owl Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
 end)
