@@ -116,15 +116,16 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Scr
 end)
 
 psxbtns:Button("Milk Up Pet Sim X", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/PetSimX/main/MilkUpBeta.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a82cd5447cbbc4c7be0e8db405555787.lua"))()
 end)
 
 psxbtns:Button("Evo V4 Pet Sim X", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/PetSimulator/main/EvoV4.lua"))()
+loadstring(game:HttpGet("https://projectevo.xyz/v4/script.lua", true))();
 end)
 
-psxbtns:Button("Huge Games Pet Sim X", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/Project/main/Huge%20Games.lua"))()
+psxbtns:Button("Project X7", function()
+local request = (syn and syn.request) or (http and http.request) or http_request
+loadstring(request({['Url']='https://x7.software',['Method']='GET'}).Body)("X7-a5KsoQGw")
 end)
 
 psxbtns:Button("Hard Games Hub", function()
