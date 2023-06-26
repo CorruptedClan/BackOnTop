@@ -115,10 +115,6 @@ slbtns:Button("Speed Hub X (best)", function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Script%20Game"))()
 end)
 
-psxbtns:Button("Milk Up Pet Sim X", function()
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a82cd5447cbbc4c7be0e8db405555787.lua"))()
-end)
-
 psxbtns:Button("Evo V4 Pet Sim X", function()
 loadstring(game:HttpGet("https://projectevo.xyz/v4/script.lua", true))();
 end)
