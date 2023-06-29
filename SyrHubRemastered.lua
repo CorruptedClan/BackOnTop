@@ -119,7 +119,7 @@ psxbtns:Button("Evo V4 Pet Sim X", function()
 loadstring(game:HttpGet("https://projectevo.xyz/v4/script.lua", true))();
 end)
 
-psxbtns:Button("Project X7", function()
+psxbtns:Button("Project X7 Hub", function()
 local request = (syn and syn.request) or (http and http.request) or http_request
 loadstring(request({['Url']='https://x7.software',['Method']='GET'}).Body)("X7-a5KsoQGw")
 end)
