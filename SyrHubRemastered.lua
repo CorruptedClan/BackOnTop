@@ -538,7 +538,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/
 end)
 
 ddbtns:Button("ZenX Beta (Paid)", function()
-loadstring("https://raw.githubusercontent.com/CorruptedClan/dbdb/main/MainLoader.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/dbdb/main/MainLoader.lua"))()
 end)
 
 mvsdbtns:Button("Black Hub", function()
