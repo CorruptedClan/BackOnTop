@@ -5,7 +5,7 @@ local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/daw
 local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.2.1")
 
 -- servers
-local mainserv = scriptswin:Server("Syr Scripts", "rbxassetid://13797609825")
+local mainserv = scriptswin:Server("Syr Scripts", "")
 local secserv = scriptswin:Server("Tool Scripts & Misc", "")
 local trdserv = scriptswin:Server("FE/Fun Scripts", "")
 
