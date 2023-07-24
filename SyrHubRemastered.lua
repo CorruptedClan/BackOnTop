@@ -425,7 +425,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Schervi/FloppaHub/mai
 end)
 
 pgybtns:Button("Piggy item giver OP", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/itemtp/main/PiggyModz.lua"))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/lolpoppyus/Roblox-Lua/master/Piggy'),true))()
 end)
 
 rfbtns:Button("TweedLeak Hub", function()
