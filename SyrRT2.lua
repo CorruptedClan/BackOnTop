@@ -4,6 +4,13 @@
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
 local w = library:CreateWindow("Syr Restaurant Tycoon 2")
 local b = w:CreateFolder("Main")
+local d = w:CreateFolder("Credits")
+d:Button("EdxymRBLX - YT",function()
+    print("subscribe")
+d:Button("SyrHub",function()
+    print("made by EdxymRBLX")
+b:Button("Anti-AFK",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/4ce7GnHW"))()
 b:Button("Player Instant Cook",function()
     local Cooking = game.Players.LocalPlayer.PlayerScripts.CookingNew
 local CookProgress = require(Cooking.CookProgress)
