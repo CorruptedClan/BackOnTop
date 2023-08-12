@@ -1,5 +1,8 @@
+--[[ MADE BY SYRHUB || IF YOU SKID JUST GIVE CREDITS #stopskidding]]
+
+
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
-local w = library:CreateWindow("Restaurant Tycoon 2")
+local w = library:CreateWindow("Syr Restaurant Tycoon 2")
 local b = w:CreateFolder("Main")
 b:Button("Player Instant Cook",function()
     local Cooking = game.Players.LocalPlayer.PlayerScripts.CookingNew
