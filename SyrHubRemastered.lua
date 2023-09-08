@@ -7,7 +7,7 @@ local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.2.1")
 -- servers
 local mainserv = scriptswin:Server("Syr Scripts", "")
 local secserv = scriptswin:Server("Tool Scripts & Misc", "")
-local trdserv = scriptswin:Server("FE/Fun Scripts", "13797614864")
+local trdserv = scriptswin:Server("FE/Fun Scripts", "assetid://13797614864")
 
 -- channels
 local slbtns = mainserv:Channel("Shindo Life")
